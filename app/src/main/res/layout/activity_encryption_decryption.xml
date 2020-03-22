@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="20sp"
+    tools:context=".EncryptionDecryption">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edittext"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:singleLine="true"
+        android:background="@drawable/box"
+        android:padding="8dp" />
+    <Button
+        android:layout_marginTop="20sp"
+        android:id="@+id/submit"
+        android:layout_below="@+id/edittext"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="@string/Submit"
+        android:enabled="false"
+        android:background="@color/blue"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resulttext"
+        android:layout_below="@+id/submit"
+        android:layout_margin="20sp"
+        android:singleLine="false"
+        android:gravity="center"
+        android:textColor="@color/red"/>
+
+
+</RelativeLayout>
